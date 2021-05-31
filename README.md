@@ -38,3 +38,23 @@
           [("3+5", 8), ("2+4", 6), ("6*9", 42)]
           )
 ```
+
+## install pylint in virtual env
+```sh
+  pipenv install pylint --dev
+```
+
+## pylint config
+
+### generate file config 
+```sh
+  pylint --generate-rcfile > .pylintrc
+```
+
+### added comand in config 
+```python
+  init-hook='import sys; sys.path.append("/path/to/root")'
+```
+
+
+
